@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace BattleTank
 {
@@ -9,7 +10,7 @@ namespace BattleTank
     {
         public EnemyScriptableObject enemyScriptable;
         private int enemyCount;
-        public Canvas canvas;
+      
         private void Start()
         {
             enemyCount = 0;
@@ -32,7 +33,7 @@ namespace BattleTank
         {
             if(EnemyCount.deathCount >= 4)
             {
-                canvas.gameObject.SetActive(true);
+                SceneManager.LoadScene("Lobby");
             }
         }
     }

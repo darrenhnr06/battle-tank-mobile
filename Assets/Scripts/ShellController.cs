@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShellController : MonoBehaviour
+namespace BattleTank
 {
-    private float fireTime = 0.5f;
-    private void OnCollisionEnter(Collision collision)
+    public class ShellController : MonoBehaviour
     {
-        StartCoroutine(FireShell());
-    }
+        private float fireTime = 0.5f;
+        private void OnCollisionEnter(Collision collision)
+        {
+            StartCoroutine(FireShell());
+        }
 
-    IEnumerator FireShell()
-    {
-        yield return new WaitForSeconds(fireTime);
-        Destroy(gameObject);
+        IEnumerator FireShell()
+        {
+            yield return new WaitForSeconds(fireTime);
+            Destroy(gameObject);
+        }
     }
 }

@@ -16,15 +16,6 @@ namespace BattleTank
             CreateNewTank();
         }
 
-
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                CreateNewTank();
-            }
-        }
-
         public void CreateNewTank()
         {
             TankScriptableObject1 tankScriptableObject;

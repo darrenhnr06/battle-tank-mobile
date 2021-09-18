@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class EnemyCount
+namespace BattleTank
 {
-    public static int deathCount = 0;
+    public static class EnemyCount
+    {
+        public static int deathCount = 0;
+    }
 }

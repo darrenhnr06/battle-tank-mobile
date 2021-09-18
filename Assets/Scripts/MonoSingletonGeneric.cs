@@ -22,30 +22,4 @@ namespace BattleTank
             }
         }
     }
-
-    public class PlayerTank : MonoSingletonGeneric<PlayerTank>
-    {
-        protected override void Awake()
-        {
-            base.Awake();
-        }
-
-        public void AttackEnemy()
-        {
-            Debug.Log("Enemy attacked");
-        }
-    }
-
-    public class EnemyTank : MonoSingletonGeneric<EnemyTank>
-    {
-        protected override void Awake()
-        {
-            base.Awake();
-        }
-
-        public void AttackEnemy()
-        {
-            Debug.Log("Player attacked");
-        }
-    }
 }
