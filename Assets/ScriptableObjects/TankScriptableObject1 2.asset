@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602cd3ea0cf6e4b47a3f63ca3b6477c2, type: 3}
+  m_Name: TankScriptableObject1 2
+  m_EditorClassIdentifier: 
+  tankType: 1
+  TankName: Blue Tank
+  Speed: 25
+  Health: 100
+  gameObject: {fileID: 2323457423849957883, guid: b38a9dac600dd694ab25a887542e0e97,
+    type: 3}
+  gravity: 9.8
+  rotation_Speed: 0.15
+  rotateDegreesPerSecond: 180
+  m_LaunchForce: 10

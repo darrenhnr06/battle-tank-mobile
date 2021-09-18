@@ -1,0 +1,18 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ShellController : MonoBehaviour
+{
+    private float fireTime = 0.5f;
+    private void OnCollisionEnter(Collision collision)
+    {
+        StartCoroutine(FireShell());
+    }
+
+    IEnumerator FireShell()
+    {
+        yield return new WaitForSeconds(fireTime);
+        Destroy(gameObject);
+    }
+}
